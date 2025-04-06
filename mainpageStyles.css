@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+}
+
+html,body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(24, 25, 27);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+}
+
+.pfp {
+    border-radius: 50%;
+}
+
+p {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.title {
+    font-size: 200%;
+}
+
+.subtitle {
+    font-size: 80%;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.socialMedia {
+    margin-top: 3%;
+    justify-content: center;
+}
+
+@keyframes opacityout {
+    from {
+      opacity: 80%;
+    }
+    to {
+      opacity: 15%;
+    }
+  }
+
+.socialIconContainer {
+    width: 5%;
+    height: 5%;
+    margin-right: 3%;
+    opacity: 15%;
+    animation: opacityout 0.2s 1 normal linear;
+}
+
+.socialIconContainer:last-child {
+    margin-right: 0;
+}
+
+@keyframes opacityin {
+    from {
+      opacity: 15%;
+    }
+    to {
+      opacity: 80%;
+    }
+  }
+
+.socialIconContainer:hover {
+    animation: opacityin 0.2s 1 normal linear;
+    opacity: 80%;
+}
+
+.mainContainer {
+    width: 100%;
+    height: 30vh;
+}
+
+.workList {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+
+.workItem {
+    width: 15%;
+    height: 15%;
+    margin-right: 10%;
+    opacity: 15%;
+    animation: opacityout 0.2s 1 normal linear;
+}
+.workItemContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.workItem {
+    margin-right: 0;
+}
+.workItem:hover {
+    animation: opacityin 0.2s 1 normal linear;
+    opacity: 80%;
+}
+.workItemIconContainer {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.workItemIcon {
+}
+.workItemTitle {
+    margin-bottom: 5%;
+}
+.workItemExperience {
+    font-size: 70%;
+}
+.workItemComAmount {
+    font-size: 70%;
+}
